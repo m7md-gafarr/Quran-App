@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran/constants/string.dart';
 import 'package:quran/view/app_router.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class QuranApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: appRoute.generate_route,
+      initialRoute: HomeScreen,
     );
   }
 }
