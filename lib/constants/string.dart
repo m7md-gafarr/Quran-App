@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 const SplashScreen = '/splash';
 const IntroScreen = '/intro';
 const HomeScreen = '/';
+const QuranScreen = '/quran';
+const PrayerTimeScreen = '/prayerTime';
+const QiblaScreen = '/qibla';
 
 //----------------------------------//
 

@@ -13,28 +13,33 @@ class Home_screen extends StatelessWidget {
   Home_screen({super.key});
   final List<PopularItemModel> _popularItemModel = [
     PopularItemModel(
-      color: const Color(0xfff5faf4),
-      path: "assets/icon/1.svg",
-      text: "Quran",
-    ),
+        color: const Color(0xfff5faf4),
+        path: "assets/icon/1.svg",
+        text: "Quran",
+        nav: QuranScreen),
     PopularItemModel(
         color: const Color(0xfffffaf0),
         path: "assets/icon/1.svg",
-        text: "Prayer times"),
+        text: "Prayer times",
+        nav: PrayerTimeScreen),
     PopularItemModel(
         color: const Color(0xfff5f6fd),
         path: "assets/icon/2.svg",
+        nav: QiblaScreen,
         text: "Recite"),
     PopularItemModel(
         color: const Color(0xfffef6f4),
         path: "assets/icon/1.svg",
+        nav: QiblaScreen,
         text: "Qibla"),
     PopularItemModel(
         color: const Color(0xfffef6f4),
         path: "assets/icon/1.svg",
+        nav: QiblaScreen,
         text: "Duas"),
     PopularItemModel(
         color: const Color(0xfffef6f4),
+        nav: QiblaScreen,
         path: "assets/icon/1.svg",
         text: "Azkar"),
   ];

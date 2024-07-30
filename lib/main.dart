@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran/constants/string.dart';
 import 'package:quran/view/app_router.dart';
+import 'package:quran/view/screens/test.dart';
 
 void main() {
   runApp(
@@ -15,10 +16,11 @@ class QuranApp extends StatelessWidget {
   final AppRouter appRoute;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: appRoute.generate_route,
-      initialRoute: HomeScreen,
+      // onGenerateRoute: appRoute.generate_route,
+      // initialRoute: HomeScreen,
+      home: Test_Screen(),
     );
   }
 }

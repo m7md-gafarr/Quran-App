@@ -13,7 +13,7 @@ class PopularItemWidget extends StatelessWidget {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       onTap: () {
-        Navigator.pushNamed(context, "routeName");
+        Navigator.pushNamed(context, popularItemModel.nav);
       },
       child: Container(
         decoration: BoxDecoration(
