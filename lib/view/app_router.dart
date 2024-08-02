@@ -17,7 +17,7 @@ class AppRouter {
       case QuranScreen:
         return MaterialPageRoute(builder: (_) => const Quran_Screen());
       case PrayerTimeScreen:
-        return MaterialPageRoute(builder: (_) => const Prayertime_Screen());
+        return MaterialPageRoute(builder: (_) => Prayertime_Screen());
       case QiblaScreen:
         return MaterialPageRoute(builder: (_) => const Qibla_Screen());
 

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:quran/Bloc/cubit/prayer_time_cubit.dart';
 import 'package:quran/constants/string.dart';
 import 'package:quran/view/app_router.dart';
-import 'package:quran/view/screens/test.dart';
 
 void main() {
   runApp(
@@ -16,11 +17,18 @@ class QuranApp extends StatelessWidget {
   final AppRouter appRoute;
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // onGenerateRoute: appRoute.generate_route,
-      // initialRoute: HomeScreen,
-      home: Test_Screen(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => PrayerTimeCubit(),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute: appRoute.generate_route,
+        initialRoute: HomeScreen,
+        // home: Test_Screen(),
+      ),
     );
   }
 }

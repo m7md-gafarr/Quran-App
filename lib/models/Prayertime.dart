@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 class PrayertimeModel {
   final TimingsModel timing;
   final DataHijriAndGregorian data;
@@ -17,6 +18,7 @@ class PrayertimeModel {
 
 class TimingsModel {
   final String Fajr;
+  final String Sunrise;
   final String Dhuhr;
   final String Asr;
   final String Maghrib;
@@ -24,6 +26,7 @@ class TimingsModel {
 
   TimingsModel({
     required this.Fajr,
+    required this.Sunrise,
     required this.Dhuhr,
     required this.Asr,
     required this.Maghrib,
@@ -32,6 +35,7 @@ class TimingsModel {
 
   factory TimingsModel.fromJson(Map<String, dynamic> json) {
     return TimingsModel(
+      Sunrise: json['Sunrise'],
       Fajr: json['Fajr'],
       Dhuhr: json['Dhuhr'],
       Asr: json['Asr'],
