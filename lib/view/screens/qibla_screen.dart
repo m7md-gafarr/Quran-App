@@ -32,8 +32,7 @@ class _Qibla_ScreenState extends State<Qibla_Screen>
       vsync: this,
     );
 
-    _animation =
-        Tween(begin: 0.0, end: 0.0).animate(_controller); // تهيئة _animation
+    _animation = Tween(begin: 0.0, end: 0.0).animate(_controller);
 
     subscription = magnetometerEvents.listen(
       (event) {
@@ -62,10 +61,9 @@ class _Qibla_ScreenState extends State<Qibla_Screen>
   bool checkAlignment(MagnetometerEvent event) {
     double qiblaDirection = calculateQiblaDirection();
     double phoneDirection = Math.atan2(event.y, event.x) * (180.0 / Math.pi);
-    phoneDirection =
-        (phoneDirection + 360.0) % 360.0; // ضبط النطاق إلى 0-360 درجة
+    phoneDirection = (phoneDirection + 360.0) % 360.0;
 
-    double tolerance = 5.0; // التفاوت المسموح به بالدرجات
+    double tolerance = 5.0;
     return (phoneDirection - qiblaDirection).abs() <= tolerance;
   }
 
@@ -98,7 +96,6 @@ class _Qibla_ScreenState extends State<Qibla_Screen>
     bearing = bearing * (180.0 / 3.141592653589793);
     bearing = (bearing + 360.0) % 360.0;
 
-    // عكس اتجاه القبلة
     return (bearing + 180.0) % 360.0;
   }
 
@@ -112,12 +109,10 @@ class _Qibla_ScreenState extends State<Qibla_Screen>
   bool _isPhoneHorizontal() {
     if (_accelerometerEvent == null) return false;
 
-    // القيم للاتجاهات المختلفة
     double x = _accelerometerEvent!.x;
     double y = _accelerometerEvent!.y;
     double z = _accelerometerEvent!.z;
 
-    // تحقق إذا كان الهاتف في وضع أفقي
     return (z.abs() < 8.0 && x.abs() < 8.0 && y.abs() > 8.0);
   }
 

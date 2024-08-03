@@ -25,8 +25,8 @@ class Home_screen extends StatelessWidget {
     PopularItemModel(
         color: const Color(0xfff5f6fd),
         path: "assets/icon/2.svg",
-        nav: QiblaScreen,
-        text: "Recite"),
+        nav: Tasbeehscreen,
+        text: "Tasbeeh "),
     PopularItemModel(
         color: const Color(0xfffef6f4),
         path: "assets/icon/1.svg",
@@ -223,6 +223,201 @@ class Home_screen extends StatelessWidget {
           ],
         ),
       ),
+
+      // body: NestedScrollView(
+      //   physics: const BouncingScrollPhysics(),
+      //   scrollDirection: Axis.vertical,
+      //   headerSliverBuilder: (context, innerBoxIsScrolled) => [
+      //     Column(
+      //       children: [
+      //         Container(
+      //           height: MediaQuery.of(context).size.width - 230,
+      //           width: MediaQuery.of(context).size.width - 30,
+      //           decoration: const BoxDecoration(
+      //             // image: DecorationImage(
+      //             //   fit: BoxFit.fitWidth,
+      //             //   image: Svg('assets/image/Mask_group.svg'),
+      //             // ),
+      //             gradient: LinearGradient(
+      //               colors: [
+      //                 SecondaryColor,
+      //                 TertiaryColor,
+      //               ],
+      //             ),
+      //             borderRadius: BorderRadius.all(Radius.circular(25)),
+      //           ),
+      //           child: Stack(
+      //             children: [
+      //               Positioned(
+      //                 right: -30,
+      //                 bottom: -22,
+      //                 child: SvgPicture.asset(
+      //                   "assets/image/Mask_group.svg",
+      //                   height: 220,
+      //                 ),
+      //               ),
+      //               Positioned(
+      //                 right: 10,
+      //                 child: SvgPicture.asset(
+      //                   "assets/image/image_intro.svg",
+      //                   height: 190,
+      //                 ),
+      //               ),
+      //               Padding(
+      //                 padding: const EdgeInsets.only(left: 15.0),
+      //                 child: Column(
+      //                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //                   crossAxisAlignment: CrossAxisAlignment.start,
+      //                   children: [
+      //                     const Text(
+      //                       "Last Read",
+      //                       style: TextStyle(
+      //                         color: PrimaryColor,
+      //                         fontFamily: "poppins",
+      //                         fontSize: 13,
+      //                         fontWeight: FontWeight.normal,
+      //                       ),
+      //                     ),
+      //                     const Text(
+      //                       "الفاتحة",
+      //                       style: TextStyle(
+      //                         color: PrimaryColor,
+      //                         fontFamily: "poppins",
+      //                         fontSize: 20,
+      //                         fontWeight: FontWeight.bold,
+      //                       ),
+      //                     ),
+      //                     const Text(
+      //                       "Ayah no. 1",
+      //                       style: TextStyle(
+      //                         color: PrimaryColor,
+      //                         fontFamily: "poppins",
+      //                         fontSize: 13,
+      //                         fontWeight: FontWeight.normal,
+      //                       ),
+      //                     ),
+      //                     ElevatedButton(
+      //                         onPressed: () {},
+      //                         style: ElevatedButton.styleFrom(
+      //                           elevation: 0,
+      //                           backgroundColor: PrimaryColor,
+      //                           padding: const EdgeInsets.symmetric(
+      //                               horizontal: 15, vertical: 7),
+      //                         ),
+      //                         child: const Text(
+      //                           "Continue",
+      //                           style: TextStyle(
+      //                             color: SecondaryColor,
+      //                             fontFamily: "poppins",
+      //                             fontSize: 15,
+      //                           ),
+      //                         )),
+      //                   ],
+      //                 ),
+      //               )
+      //             ],
+      //           ),
+      //         ),
+      //       ],
+      //     )
+      //   ],
+      //   body: Text("data"),
+      // ),
     );
   }
+}
+
+Widget mok() {
+  return Column(
+    children: [
+      Container(
+        // height: MediaQuery.of().size.width - 230,
+        // width: MediaQuery.of(_).size.width - 30,
+        decoration: const BoxDecoration(
+          // image: DecorationImage(
+          //   fit: BoxFit.fitWidth,
+          //   image: Svg('assets/image/Mask_group.svg'),
+          // ),
+          gradient: LinearGradient(
+            colors: [
+              SecondaryColor,
+              TertiaryColor,
+            ],
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(25)),
+        ),
+        child: Stack(
+          children: [
+            Positioned(
+              right: -30,
+              bottom: -22,
+              child: SvgPicture.asset(
+                "assets/image/Mask_group.svg",
+                height: 220,
+              ),
+            ),
+            Positioned(
+              right: 10,
+              child: SvgPicture.asset(
+                "assets/image/image_intro.svg",
+                height: 190,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Last Read",
+                    style: TextStyle(
+                      color: PrimaryColor,
+                      fontFamily: "poppins",
+                      fontSize: 13,
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                  const Text(
+                    "الفاتحة",
+                    style: TextStyle(
+                      color: PrimaryColor,
+                      fontFamily: "poppins",
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Text(
+                    "Ayah no. 1",
+                    style: TextStyle(
+                      color: PrimaryColor,
+                      fontFamily: "poppins",
+                      fontSize: 13,
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                  ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        backgroundColor: PrimaryColor,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 15, vertical: 7),
+                      ),
+                      child: const Text(
+                        "Continue",
+                        style: TextStyle(
+                          color: SecondaryColor,
+                          fontFamily: "poppins",
+                          fontSize: 15,
+                        ),
+                      )),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    ],
+  );
 }

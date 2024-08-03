@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-const SplashScreen = '/splash';
-const IntroScreen = '/intro';
+const SplashScreen = '/SplashScreen';
+const IntroScreen = '/IntroScreen';
 const HomeScreen = '/';
-const QuranScreen = '/quran';
-const PrayerTimeScreen = '/prayerTime';
-const QiblaScreen = '/qibla';
+const QuranScreen = '/QuranScreen';
+const PrayerTimeScreen = '/PrayerTimeScreen';
+const QiblaScreen = '/QiblaScreen';
+const Tasbeehscreen = '/Tasbeehscreen';
 
 //----------------------------------//
 

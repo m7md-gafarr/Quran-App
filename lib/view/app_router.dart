@@ -6,6 +6,7 @@ import 'package:quran/view/screens/prayerTime_screen.dart';
 import 'package:quran/view/screens/qibla_screen.dart';
 
 import 'screens/home_screen.dart';
+import 'screens/tasbeeh_screen.dart';
 
 class AppRouter {
   Route generate_route(RouteSettings settings) {
@@ -20,6 +21,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => Prayertime_Screen());
       case QiblaScreen:
         return MaterialPageRoute(builder: (_) => const Qibla_Screen());
+      case Tasbeehscreen:
+        return MaterialPageRoute(builder: (_) => const Tasbeeh_screen());
 
       default:
         return MaterialPageRoute(
