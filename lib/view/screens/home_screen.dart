@@ -39,7 +39,7 @@ class Home_screen extends StatelessWidget {
         text: "Duas"),
     PopularItemModel(
         color: const Color(0xfffef6f4),
-        nav: QiblaScreen,
+        nav: Azkarscreen,
         path: "assets/icon/1.svg",
         text: "Azkar"),
   ];

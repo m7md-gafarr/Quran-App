@@ -7,6 +7,8 @@ const QuranScreen = '/QuranScreen';
 const PrayerTimeScreen = '/PrayerTimeScreen';
 const QiblaScreen = '/QiblaScreen';
 const Tasbeehscreen = '/Tasbeehscreen';
+const Azkarscreen = '/Azkarscreen';
+const AzkarDetailsScreen = '/AzkarDetails';
 
 //----------------------------------//
 
