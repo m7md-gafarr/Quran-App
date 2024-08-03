@@ -1,9 +1,7 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:quran/models/Azkar.dart';
 
-import '../../models/Prayertime.dart';
-import '../../service/PrayerTime.dart';
-import '../../view models/prayerTimeViewModel.dart';
+import '../../view models/Azkar.dart';
 
 class Test_Screen extends StatelessWidget {
   const Test_Screen({super.key});
@@ -13,7 +11,16 @@ class Test_Screen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-          onPressed: () async {},
+          onPressed: () async {
+            List<AzkarModel> list = await AzkarViewModel().fetchListdata();
+
+            print("-----------------------------");
+
+            List<Contant> list1 = await AzkarViewModel()
+                .fetchZkerdata(id: list[2].ID, Zker: list[2].TITLE);
+
+            print(list1[2].ARABIC_TEXT);
+          },
           child: const Text("get data"),
         ),
       ),

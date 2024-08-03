@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:quran/Bloc/cubit/prayer_time_cubit.dart';
+import 'package:quran/Bloc/Prayer_Cubit/prayer_time_cubit.dart';
 import 'package:quran/constants/string.dart';
 import 'package:quran/models/Prayertime.dart';
 import 'package:quran/view/widget/prayertime.dart';

@@ -22,7 +22,7 @@ class AppRouter {
       case QiblaScreen:
         return MaterialPageRoute(builder: (_) => const Qibla_Screen());
       case Tasbeehscreen:
-        return MaterialPageRoute(builder: (_) => const Tasbeeh_screen());
+        return MaterialPageRoute(builder: (_) => Tasbeeh_screen());
 
       default:
         return MaterialPageRoute(

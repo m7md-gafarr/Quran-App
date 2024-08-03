@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quran/Bloc/cubit/prayer_time_cubit.dart';
+import 'package:quran/Bloc/Prayer_Cubit/prayer_time_cubit.dart';
 import 'package:quran/constants/string.dart';
 import 'package:quran/view/app_router.dart';
+
+import 'Bloc/Tasbeeh_Cubit/tasbeeh_cubit.dart';
+import 'view/screens/test.dart';
 
 void main() {
   runApp(
@@ -21,6 +24,9 @@ class QuranApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => PrayerTimeCubit(),
+        ),
+        BlocProvider(
+          create: (context) => TasbeehCubit(),
         ),
       ],
       child: MaterialApp(
