@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:quran/constants/string.dart';
+import 'package:quran_app/constants/string.dart';
 
 import '../../models/popular_item.dart';
 import '../widget/PopularItem.dart';

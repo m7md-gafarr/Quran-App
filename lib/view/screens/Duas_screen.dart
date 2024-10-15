@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:quran/models/Azkar.dart';
-import 'package:quran/models/Duas.dart';
+import 'package:quran_app/models/Azkar.dart';
+import 'package:quran_app/models/Duas.dart';
 import '../../constants/string.dart';
 import '../../view models/Duas.dart';
 

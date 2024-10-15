@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:quran/constants/string.dart';
-import 'package:quran/models/popular_item.dart';
+
+import 'package:quran_app/constants/string.dart';
+import 'package:quran_app/models/popular_item.dart';
 
 class PopularItemWidget extends StatelessWidget {
   const PopularItemWidget({super.key, required this.popularItemModel});

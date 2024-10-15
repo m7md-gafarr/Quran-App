@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:quran/models/Prayertime.dart';
 
+import '../models/Prayertime.dart';
 import '../service/PrayerTime.dart';
 
 class PrayertimeViewModel {

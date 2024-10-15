@@ -1,10 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:quran/models/Azkar.dart';
-import 'package:quran/service/Duas.dart';
 
-import '../../models/Duas.dart';
-import '../../view models/Azkar.dart';
+import 'package:quran_app/models/Quran.dart';
+
+import '../../service/Quran.dart';
 
 class Test_Screen extends StatelessWidget {
   const Test_Screen({super.key});
@@ -15,11 +14,12 @@ class Test_Screen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () async {
-            List<DuasModel> list = await DuasService(Dio()).getListDouas();
+            List<QuranJuzModel> list =
+                await QuranService(Dio()).GetListQuranJuz();
 
             print("-----------------------------");
 
-            print(list[2].arab);
+            print(list[0].page);
           },
           child: const Text("get data"),
         ),

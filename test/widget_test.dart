@@ -8,8 +8,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:quran/main.dart';
-import 'package:quran/view/app_router.dart';
+import 'package:quran_app/main.dart';
+import 'package:quran_app/view/app_router.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

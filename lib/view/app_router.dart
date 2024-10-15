@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:quran/constants/string.dart';
-import 'package:quran/view/screens/Duas_screen.dart';
-import 'package:quran/view/screens/Quran_screen.dart';
-import 'package:quran/view/screens/azkar_details_screen.dart';
-import 'package:quran/view/screens/azkar_screen.dart';
-import 'package:quran/view/screens/intro_screen.dart';
-import 'package:quran/view/screens/prayerTime_screen.dart';
-import 'package:quran/view/screens/qibla_screen.dart';
 
+import 'package:quran_app/constants/string.dart';
+import 'package:quran_app/view/screens/Quran_screen.dart';
+import 'package:quran_app/view/screens/intro_screen.dart';
+import 'package:quran_app/view/screens/qibla_screen.dart';
+
+import 'screens/Duas_screen.dart';
+import 'screens/azkar_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/prayerTime_screen.dart';
 import 'screens/tasbeeh_screen.dart';
 
 class AppRouter {

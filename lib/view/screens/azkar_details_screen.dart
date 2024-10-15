@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'package:quran/models/Azkar.dart';
-import 'package:quran/view%20models/Azkar.dart';
+import 'package:quran_app/models/Azkar.dart';
+import 'package:quran_app/view%20models/Azkar.dart';
 
 import '../../constants/string.dart';
 

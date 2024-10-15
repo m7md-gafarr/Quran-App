@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:quran/models/Azkar.dart';
+import 'package:quran_app/models/Azkar.dart';
 
 class AzkarService {
   final Dio dio;

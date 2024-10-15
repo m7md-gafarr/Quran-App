@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:quran/models/tasbeeh.dart';
+import 'package:quran_app/models/tasbeeh.dart';
 
 part 'tasbeeh_state.dart';
 

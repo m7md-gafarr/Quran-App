@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:quran/Bloc/Tasbeeh_Cubit/tasbeeh_cubit.dart';
-import 'package:quran/constants/string.dart';
+import 'package:quran_app/Bloc/Tasbeeh_Cubit/tasbeeh_cubit.dart';
+import 'package:quran_app/constants/string.dart';
 
 class Tasbeeh_screen extends StatefulWidget {
   Tasbeeh_screen({super.key});

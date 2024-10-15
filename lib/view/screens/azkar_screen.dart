@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:quran/constants/string.dart';
-import 'package:quran/models/Azkar.dart';
-import 'package:quran/view%20models/Azkar.dart';
-import 'package:quran/view/screens/azkar_details_screen.dart';
+import 'package:quran_app/constants/string.dart';
+import 'package:quran_app/models/Azkar.dart';
+import 'package:quran_app/view%20models/Azkar.dart';
+import 'package:quran_app/view/screens/azkar_details_screen.dart';
 
 class Azkar_Screen extends StatefulWidget {
   const Azkar_Screen({super.key});
