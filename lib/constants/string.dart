@@ -9,6 +9,7 @@ const QiblaScreen = '/QiblaScreen';
 const Tasbeehscreen = '/Tasbeehscreen';
 const Azkarscreen = '/Azkarscreen';
 const AzkarDetailsScreen = '/AzkarDetails';
+const DuasScreen = '/DuasScreen';
 
 //----------------------------------//
 

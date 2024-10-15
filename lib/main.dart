@@ -4,6 +4,7 @@ import 'package:quran/Bloc/Prayer_Cubit/prayer_time_cubit.dart';
 import 'package:quran/constants/string.dart';
 import 'package:quran/view/app_router.dart';
 import 'Bloc/Tasbeeh_Cubit/tasbeeh_cubit.dart';
+import 'view/screens/test.dart';
 
 void main() {
   runApp(

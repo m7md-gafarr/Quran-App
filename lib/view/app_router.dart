@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran/constants/string.dart';
+import 'package:quran/view/screens/Duas_screen.dart';
 import 'package:quran/view/screens/Quran_screen.dart';
 import 'package:quran/view/screens/azkar_details_screen.dart';
 import 'package:quran/view/screens/azkar_screen.dart';
@@ -27,6 +28,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => Tasbeeh_screen());
       case Azkarscreen:
         return MaterialPageRoute(builder: (_) => Azkar_Screen());
+      case DuasScreen:
+        return MaterialPageRoute(builder: (_) => Duas_Screen());
 
       default:
         return MaterialPageRoute(
