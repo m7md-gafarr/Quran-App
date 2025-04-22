@@ -1,16 +1,10 @@
-# quran
+# Quran App - All-in-One Islamic Flutter App
 
-A new Flutter project.
+A complete and feature-rich Islamic app built with Flutter. This app offers a seamless experience for Muslims with a range of tools to aid in daily spiritual practices.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features:
+- 📖 **Quran**: Read the Holy Quran with the last-read position saved, so you can pick up where you left off.
+- 🕰️ **Prayer Times**: Accurate prayer times based on your location, with real-time updates.
+- 🧭 **Qibla**: Find the correct direction towards the Qibla with ease.
+- 📿 **Tasbeeh**: A digital counter for your Tasbeeh (dhikr) practices.
+- 📓 **Azkar & Duas**: Access to a wide range of daily Azkar and Duas for spiritual reflection.
